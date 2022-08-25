@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.44657826, g: 0.49641263, b: 0.57481676, a: 1}
+  m_IndirectSpecularColor: {r: 0.44657844, g: 0.49641222, b: 0.57481694, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -233,6 +233,7 @@ GameObject:
   - component: {fileID: 245091521}
   - component: {fileID: 245091520}
   - component: {fileID: 245091524}
+  - component: {fileID: 245091525}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -336,11 +337,25 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f6c5aab61bf385d4487b06148e70cb8d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  axes: 0
+  axes: 1
   sensivityHor: 9
   sensivityVert: 9
   minimumVert: -45
   maximumVert: 45
+--- !u!114 &245091525
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 245091518}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 86ae16510f2b31b4b9a22c7134f05845, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speed: 6
+  gravity: -9.8
 --- !u!1 &339573012
 GameObject:
   m_ObjectHideFlags: 0
@@ -740,6 +755,7 @@ GameObject:
   - component: {fileID: 797143046}
   - component: {fileID: 797143048}
   - component: {fileID: 797143047}
+  - component: {fileID: 797143049}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -813,6 +829,23 @@ Camera:
   m_OcclusionCulling: 1
   m_StereoConvergence: 10
   m_StereoSeparation: 0.022
+--- !u!114 &797143049
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 797143045}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f6c5aab61bf385d4487b06148e70cb8d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  axes: 2
+  sensivityHor: 9
+  sensivityVert: 9
+  minimumVert: -45
+  maximumVert: 45
 --- !u!1 &847720040
 GameObject:
   m_ObjectHideFlags: 0
