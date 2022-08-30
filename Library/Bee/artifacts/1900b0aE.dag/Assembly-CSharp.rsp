@@ -350,6 +350,7 @@
 "Assets/Scripts/MouseLook.cs"
 "Assets/Scripts/RayShooter.cs"
 "Assets/Scripts/ReactiveTarget.cs"
+"Assets/Scripts/SceneController.cs"
 "Assets/Scripts/WanderingAI.cs"
 -langversion:9.0
 
